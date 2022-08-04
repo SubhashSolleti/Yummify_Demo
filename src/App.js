@@ -33,7 +33,7 @@ const App = () => {
 
   // useEffect(() => {
   //   console.log("cart change");
-  // }, [cart]);
+  // }, [cart]); Hola This is Kumar Sashank
 
   return (
     <React.Fragment>
