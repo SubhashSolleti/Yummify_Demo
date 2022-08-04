@@ -1,16 +1,15 @@
 import "./app.css";
-import Home from "./pages/Home";
 import Header from "./components/header/Header";
-import React, { Fragment } from "react";
-import  { useState, useEffect } from "react";
+import React from "react";
+import  { useState } from "react";
 
-import Amazon from "./components/amazon";
-import Cart from "./components/cart";
+import Menu from "./components/MenuCards/menu";
+import Cards from "./components/MenuCards/cart";
 
 import HeroSlider from "./components/hero-slider/HeroSlider";
 import Yummify_Specials from "./components/YummifySpecials/YummifySpecials";
 import Footer from "./components/footer/Footer";
-import MenuPack from "./components/menu-pack/MenuPack";
+
 
 
 const App = () => {
@@ -31,25 +30,23 @@ const App = () => {
     setCart([...arr]);
   };
 
-  // useEffect(() => {
-  //   console.log("cart change");
-  // }, [cart]); Hola This is Kumar Sashank
 
   return (
     <React.Fragment>
       <Header setShow={setShow} size={cart.length}  />
       <HeroSlider />
       <Yummify_Specials />
-      {show ? (
-        <Amazon  handleClick={handleClick} />
+ 
+       {show ? (
+         <Menu  handleClick={handleClick} />
         
-      ) : (
-        <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
-      )}
-      <Footer />
+       ) : (
+         <Cards cart={cart} setCart={setCart} handleChange={handleChange} />
+       )}
+       <Footer />
       
-    </React.Fragment>
-  );
-};
+     </React.Fragment>
+   );
+ };
 
 export default App;

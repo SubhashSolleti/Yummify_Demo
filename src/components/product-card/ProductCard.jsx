@@ -38,8 +38,7 @@ const ProductCard = (props, {handleClick}) => {
             Price: $<span>{price}</span>
           </span>
           <span className="shopping__icon">
-          <button onClick={() => handleClick(item)}>Add to Cart</button>
-            {/* <i class="ri-shopping-cart-line" onClick={() => handleClick(props.item)}></i> */}
+            <i class="ri-shopping-cart-line" onClick={() => handleClick(props.item)}></i>
           </span>
         </div>
       </div>

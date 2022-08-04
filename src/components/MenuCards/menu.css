@@ -6,10 +6,17 @@
     width: 80%;
     margin: auto;
     margin-top: 5%;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: auto; */
+  }
+  .amazon__content__list{
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
+
   .cards {
     /* display: flex; */
     width: 80%;

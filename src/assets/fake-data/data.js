@@ -1,4 +1,4 @@
-const list = [
+ const list = [
     {
       id: 1,
       title: "My First Book of Pencil Control",
@@ -97,5 +97,4 @@ const list = [
     },
   ];
   
-  export default list;
-  
+export default list;

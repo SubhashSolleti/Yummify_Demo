@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import list from "../data";
+import list from "../../assets/fake-data/data";
 import Cards from "./card";
-import "../styles/amazon.css";
+import "./menu.css";
 
-const Amazon = ({ handleClick }) => {
+const menu = ({ handleClick }) => {
   return (
     <section>
       <div className="YummifyMenu">
@@ -30,4 +29,4 @@ const Amazon = ({ handleClick }) => {
 //   );
 // };
 
-export default Amazon;
+export default menu;
